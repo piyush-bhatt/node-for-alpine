@@ -1,0 +1,38 @@
+{
+    "name": "Node.js for Alpine",
+    "id": "node-alpine",
+    "version": "1.0.0",
+    "description": "Installs Node.js (via nvm) and yarn to an alpine dev container",
+    "options": {
+        "nodeVersion": {
+            "type": "string",
+            "proposals": [
+                "lts",
+                "latest",
+                "18",
+                "16",
+                "14"
+            ],
+            "default": "lts",
+            "description": "Select or enter Node.js version to install"
+        },
+        "nvmVersion": {
+            "type": "string",
+            "default": "0.39.3",
+            "description": "Enter NVM version to install"
+        },
+        "yarnVersion": {
+            "type": "string",
+            "proposals": [
+                "latest",
+                "2",
+                "3"
+            ],
+            "default": "latest",
+            "description": "Select or enter yarn version to install"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
