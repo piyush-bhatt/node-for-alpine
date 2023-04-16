@@ -7,7 +7,7 @@ Feature to install node.js, nvm and yarn to alpine dev container
 ```json
 "features": {
     "piyush-bhatt/node-alpine:1": {
-        "version": "latest"
+        "nodeVersion": "latest"
     }
 }
 ```
